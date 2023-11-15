@@ -93,12 +93,12 @@ summary(co2_lm_country2)
 | country     | chr           | Geographical location                                  |
 | year        | num           | Year of observation                                    | 
 | co2         | num           | Annual total emissions of carbon dioxide (in million tonnes, excluding land-use change) |
-| cement_co2  |               |                                                        |
-| population  |               |                                                        |
-| gdp         |               |                                                        | 
-| energy_per_gdp |            |                                                        | 
-| land_use_change_co2 |       |                                                        |
-| total_ghg   |               |                                                        | 
+| cement_co2  | num           | Annual emissions from carbon dioxide from cement (in million tonnes)                    |
+| population  | num           | Population count by country by year                    |
+| gdp         | num           | Gross Domesetic Product in international dollars using 2011 prices to adjust for inflation| 
+| energy_per_gdp | num        | Primary energy consumption per unit of gross domestic product measured in kilowatt-hours per international dollar | 
+| land_use_change_co2 | num   | Annual emissions of carbon dioxide from land-use change (in million tonnes)           |
+| total_ghg   | num           | Total greenhouse gas emissions including land-use change and forestry (in million tonnes) | 
 
 
 
