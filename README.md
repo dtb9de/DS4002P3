@@ -92,7 +92,13 @@ summary(co2_lm_country2)
 | ----------- | ------------- | -------------------------------------------------------|
 | country     | chr           | Geographical location                                  |
 | year        | num           | Year of observation                                    | 
-| co2         | num           | Annual total emissions of carbon dioxide (million tonnes, excluding land-use change) |
+| co2         | num           | Annual total emissions of carbon dioxide (in million tonnes, excluding land-use change) |
+| cement_co2  |               |                                                        |
+| population  |               |                                                        |
+| gdp         |               |                                                        | 
+| energy_per_gdp |            |                                                        | 
+| land_use_change_co2 |       |                                                        |
+| total_ghg   |               |                                                        | 
 
 
 
