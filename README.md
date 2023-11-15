@@ -90,7 +90,10 @@ summary(co2_lm_country2)
 
 | Variable    | Variable Type | Description                                            |
 | ----------- | ------------- | -------------------------------------------------------|
-| Image       | jpg           | Image of a weather condition (labeled in image name)   |
+| country     | chr           | Geographical location                                  |
+| year        | num           | Year of observation                                    | 
+| co2         | num           | Annual total emissions of carbon dioxide (million tonnes, excluding land-use change) |
+
 
 
 Data file can be downloaded through this link: https://github.com/owid/co2-data#%EF%B8%8F-download-our-complete-co2-and-greenhouse-gas-emissions-dataset--csv--xlsx--json
