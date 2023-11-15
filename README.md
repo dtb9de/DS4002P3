@@ -2,9 +2,10 @@
 MI3 Data Analysis for Project 2 Group 5 for DS 4002
 
 Team Members:
-Sally Sydnor(srs8yy): Group Leader,
+Minh Nguyen(hvn9qwn): Group Leader,
+Sally Sydnor(srs8yy),
 David Bergman(dtb9de),
-Minh Nguyen(hvn9qwn)
+
 
 ## Repository Contents
 
