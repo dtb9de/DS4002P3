@@ -110,11 +110,8 @@ Data file can be downloaded through this link: https://github.com/owid/co2-data#
 ### Project 2 Figures Table of Contents
 | Figure Name      | Description |
 | ----------- | ----------- |
-| Image_Set_1.png | First sample run of predictive model, contains 9 images and its predictions, all the predictions were correct|
-| Image_Set_2.png | Second sample run of predictive model, contains 9 images and its predictions, all the predictions were correct|
-| Image_Set_3.png | Third sample run of predictive model, contains 9 images and its predictions, all the preditions were correct| 
-| Training_Validation_Graph.png | Learning curves for the predictive model, created by plotting training and validation errors (losses) and accuracies against the number of epochs|
-| Model Comparison.png | Learning curves showing the loss and accuracy for our predictive models|
+| ___.png | Line plot displaying total carbon dioxide emissions by year (1750 - 2018)|
+| ___.png | Pairwise correlation matrix between total_ghg and "gdp", "poulation", & "energy_per_gdp" |
 
 View figures here: https://github.com/dtb9de/DS4002P2/tree/main/Project2_Images
 
