@@ -1,5 +1,5 @@
-# Project 2: MI3 Group5
-MI3 Data Analysis for Project 2 Group 5 for DS 4002
+# Project 3: MI3 Group5
+MI3 Data Analysis for Project 3 Group 5 for DS 4002
 
 Team Members:
 Minh Nguyen(hvn9qwn): Group Leader,
