@@ -291,18 +291,11 @@ Model: "sequential"
 
 
 ## References
-[1] Ajayi, Gbeminiyi (2018), “Multi-class Weather Dataset for Image Classification”, Mendeley Data, V1, doi: 10.17632/4drtyfjtfy.
+[1] Hannah Ritchie, Max Roser and Pablo Rosado (2020) - "CO₂ and Greenhouse Gas Emissions". Published online at OurWorldInData.org. Retrieved from: https://ourworldindata.org/co2-and-greenhouse-gas-emissions 
 
-[2] Rutledge, Kim (2022). “Weather”, National Geographic, https://education.nationalgeographic.org/resource/weather/
-
-[3] Ongoma, Victor (2022). “The science of weather forecasting: what it takes and why it’s so
-hard to get right”, The Conversation, https://theconversation.com/the-science-of-weather-
-forecasting-what-it-takes-and-why-its-so-hard-to-get-right-
-175740#:~:text=Weather%20forecasting%20is%20an%20important,vital%20in%20the%
-20coming%20years.
-
+[2] “The Science of Climate Change,” The Science of Climate Change | The world is warming Wisconsin DNR, https://dnr.wisconsin.gov/climatechange/science (accessed Nov. 8, 2023). 
 
 ### Previous Submissions
-MI1:  https://myuva-my.sharepoint.com/:w:/r/personal/srs8yy_virginia_edu/Documents/MI2%20-%20Project%202.docx?d=wf0ca916897954c6d8f498221fbc6e180&csf=1&web=1&e=8x9Ol0
-MI2:  https://myuva-my.sharepoint.com/:w:/r/personal/srs8yy_virginia_edu/Documents/MI2%20-%20Project%202.docx?d=wf0ca916897954c6d8f498221fbc6e180&csf=1&web=1&e=8x9Ol0
+MI1:  
+MI2:  
 
