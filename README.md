@@ -112,7 +112,102 @@ cleaned_data[abc] <- lapply(cleaned_data[abc], normalize)
 cleaned_data$total_ghg <- ifelse(cleaned_data$total_ghg > 0.5, 1, 0)
 cleaned_data$total_ghg <- as.factor(cleaned_data$total_ghg)
 ```
+3. Prepare data for model
+```{r}
+set.seed(123)  # Set seed for reproducibility
+train_index <- sample(1:nrow(cleaned_data), 0.8 * nrow(cleaned_data))
+train_data <- cleaned_data[train_index, ]
+test_data <- cleaned_data[-train_index, ]
+dim(train_data)
+dim(test_data)
 
+train_data_scaled <- scale(train_data[, 8])  # Exclude 'country' and 'total_ghg'
+test_data_scaled <- scale(test_data[, 8])    # Exclude 'country' and 'total_ghg'
+```
+4. Run/Evaluate Models
+```{r}
+set.seed(456)
+
+k <- 2  # Choose the number of neighbors (you can adjust this)
+#knn_model <- knn.reg(train = train_data_scaled, test = test_data_scaled,train_data$total_ghg, k = k)
+knn_model <- knn(train_data[, c("country", "year")], train_data$total_ghg, test_data[, c("country", "year")], k = 5)
+
+length(train_data$total_ghg)
+length(train_data_scaled)
+
+knn_2 <-  knn(train = train_data,#<- training set cases
+               test = test_data,    #<- tune set cases
+               cl = train_data$total_ghg,#<- category for true classification
+               k = 9,#<- number of neighbors considered
+               use.all = TRUE,
+               prob = TRUE)# provides the output in probabilities 
+
+# Evaluate the model
+conf_matrix <- table(knn_model, test_data$total_ghg)
+accuracy <- sum(diag(conf_matrix)) / sum(conf_matrix)
+print(paste("Accuracy:", accuracy))
+
+# Different k values
+k_values <- c(1, 3, 5, 7, 9)  # Adjust as needed
+
+for (k in k_values) {
+  knn_model <- knn(train = train_data_scaled, test = test_data_scaled, cl = train_data$total_ghg, k = k)
+  conf_matrix <- table(knn_model, test_data$total_ghg)
+  accuracy <- sum(diag(conf_matrix)) / sum(conf_matrix)
+  print(paste("Accuracy for k =", k, ":", accuracy))
+}
+
+knn_model_1 <- knn(train = train_data_scaled, test = test_data_scaled, cl = train_data$total_ghg, k = 1)
+  conf_matrix <- table(knn_model_2, test_data$total_ghg)
+  accuracy_1 <- sum(diag(conf_matrix)) / sum(conf_matrix)
+  print(paste("Accuracy for k =", k, ":", accuracy_1))
+  
+
+  
+knn_model_2 <- knn(train = train_data_scaled, test = test_data_scaled, cl = train_data$total_ghg, k = 2)
+  conf_matrix <- table(knn_model_2, test_data$total_ghg)
+  accuracy_2 <- sum(diag(conf_matrix)) / sum(conf_matrix)
+  print(paste("Accuracy for k =", k, ":", accuracy_2))
+  
+```
+
+5. Producing analytical plots
+
+```{r}
+knn_diff_1 = tibble(k = knn_model_1, accuracy = accuracy_1)
+ggplot(knn_diff_1, aes(x = k, y = accuracy_1)) +
+geom_line(color = "blue") +
+geom_point(size = 3)
+dev.off()
+knn_diff_2 = tibble(k = knn_model_2, accuracy = accuracy_2)
+ggplot(knn_diff_2, aes(x = k, y = accuracy_2)) +
+geom_line(color = "red") +
+geom_point(size = 3)
+View(knn_model)
+
+
+knn_different_k = tibble(k = knn_model[1,],
+                             accuracy = knn_model[2,])
+knn_different_k_2 = tibble(k = knn_different_k_2[1,],
+                             accuracy = knn_different_k_2[2,])
+
+#View(test)
+View(knn_different_k)
+view(knn_different_k_2)
+
+# Plot accuracy vs. k.
+ggplot(knn_model,
+       aes(x = k, y = accuracy)) +
+  geom_line(color = "orange", size = 1.5) +
+  geom_point(size = 3)
+dev.off()
+
+# Plot accuracy vs. k(2).
+ggplot(knn_different_k_2,
+       aes(x = k, y = accuracy)) +
+  geom_line(color = "blue", size = 1.5) +
+  geom_point(size = 3)
+```
 ## Data
 
 | Variable    | Variable Type | Description                                            |
