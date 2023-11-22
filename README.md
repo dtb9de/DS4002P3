@@ -110,11 +110,10 @@ Data file can be downloaded through this link: https://github.com/owid/co2-data#
 ### Project 2 Figures Table of Contents
 | Figure Name      | Description |
 | ----------- | ----------- |
-| accuracy.png | |
-| co2_versus_year.png | Line plot displaying total carbon dioxide emissions by year (1750 - 2018)|
-| co2_versus_year_2.png | | 
-| correlation.png | Pairwise correlation matrix between total_ghg and "gdp", "poulation", & "energy_per_gdp" |
-| train_data.png | | 
+| co2_versus_year.png | Line graph displaying total carbon dioxide emissions by year (1750 - 2018)|
+| co2_versus_year2.png | Line graph displaying total carbon dioxide emissions by year (1750 - 2018 |
+| correlation.png | | 
+| train_data | |
 
 View figures here: https://github.com/dtb9de/DS4002P2/tree/main/Project2_Images
 
