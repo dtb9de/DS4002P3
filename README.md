@@ -85,6 +85,8 @@ summary(co2_lm_country)
 co2_lm_country2 = lm(total_ghg~country, data=cleaned_data)
 summary(co2_lm_country2)
 ```
+Machine Learning Model:
+
 
 ## Data
 
