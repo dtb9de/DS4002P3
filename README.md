@@ -112,8 +112,8 @@ Data file can be downloaded through this link: https://github.com/owid/co2-data#
 | ----------- | ----------- |
 | co2_versus_year.png | Line graph displaying total carbon dioxide emissions by year (1750 - 2018)|
 | co2_versus_year2.png | Line graph displaying total carbon dioxide emissions by year (1750 - 2018 |
-| correlation.png | | 
-| train_data | |
+| correlation.png | Correlation chart showing variable dependencies among all variables | 
+| train_data | Distribution chart of train_data conveying breadth of the intersection of the data set |
 
 View figures here: https://github.com/dtb9de/DS4002P2/tree/main/Project2_Images
 
