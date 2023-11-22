@@ -87,6 +87,31 @@ summary(co2_lm_country2)
 ```
 Machine Learning Model:
 
+1. Import packages
+```{r}
+library(caret)
+library(tidyverse)
+library(class)
+library(plotly)
+library(mice)
+library(MLmetrics)
+library(mltools)
+library(data.table)
+```
+
+2. Convert/Clean Data for model
+```{r}
+cleaned_data$year <- as.factor(cleaned_data$year)
+cleaned_data$country <- as.factor(cleaned_data$country)
+
+#Normalize the features that are numeric 
+abc <- names(select_if(cleaned_data, is.numeric))
+abc
+cleaned_data[abc] <- lapply(cleaned_data[abc], normalize)
+
+cleaned_data$total_ghg <- ifelse(cleaned_data$total_ghg > 0.5, 1, 0)
+cleaned_data$total_ghg <- as.factor(cleaned_data$total_ghg)
+```
 
 ## Data
 
