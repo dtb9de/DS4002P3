@@ -174,17 +174,21 @@ knn_model_2 <- knn(train = train_data_scaled, test = test_data_scaled, cl = trai
 5. Producing analytical plots
 
 ```{r}
-knn_diff_1 = tibble(k = knn_model_1, accuracy = accuracy_1)
-ggplot(knn_diff_1, aes(x = k, y = accuracy_1)) +
-geom_line(color = "blue") +
-geom_point(size = 3)
+  knn_diff_1 = tibble(k = knn_model_1,
+                             accuracy = accuracy_1)
+  ggplot(knn_diff_1,
+       aes(x = k, y = accuracy_1)) +
+  geom_line(color = "blue") +
+  geom_point(size = 3)
 dev.off()
-knn_diff_2 = tibble(k = knn_model_2, accuracy = accuracy_2)
-ggplot(knn_diff_2, aes(x = k, y = accuracy_2)) +
-geom_line(color = "red") +
-geom_point(size = 3)
-View(knn_model)
+  knn_diff_2 = tibble(k = knn_model_2,
+                             accuracy = accuracy_2)
+  ggplot(knn_diff_2,
+       aes(x = k, y = accuracy_2)) +
+  geom_line(color = "red") +
+  geom_point(size = 3)
 
+View(knn_model)
 
 knn_different_k = tibble(k = knn_model[1,],
                              accuracy = knn_model[2,])
