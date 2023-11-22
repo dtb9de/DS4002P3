@@ -116,7 +116,12 @@ Data file can be downloaded through this link: https://github.com/owid/co2-data#
 View figures here: https://github.com/dtb9de/DS4002P2/tree/main/Project2_Images
 
 Model Values
-Model: "sequential"
+Best accuracy with k=7 (7 nearest neighbors)
+[1] "Accuracy for k = 1 : 0.967611336032389"
+[1] "Accuracy for k = 3 : 0.983805668016194"
+[1] "Accuracy for k = 5 : 0.983805668016194"
+[1] "Accuracy for k = 7 : 0.987854251012146"
+[1] "Accuracy for k = 9 : 0.983805668016194"
 
 
 ## References
