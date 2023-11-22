@@ -132,6 +132,6 @@ Best accuracy with k=7 (7 nearest neighbors)
 [2] “The Science of Climate Change,” The Science of Climate Change | The world is warming Wisconsin DNR, https://dnr.wisconsin.gov/climatechange/science (accessed Nov. 8, 2023). 
 
 ### Previous Submissions
-MI1:  
-MI2:  
+MI1: https://myuva-my.sharepoint.com/:w:/r/personal/srs8yy_virginia_edu/Documents/MI1%20Project%203.docx?d=w15b00e2a0f0b4a9591e18b9f849d58c0&csf=1&web=1&e=XqeiMn
+MI2: https://myuva-my.sharepoint.com/:w:/r/personal/srs8yy_virginia_edu/Documents/MI2%20Project%203.docx?d=w59de98c7943647288438eab57bb10af6&csf=1&web=1&e=vQd7f3
 
